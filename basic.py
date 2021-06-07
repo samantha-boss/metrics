@@ -13,7 +13,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     value = args.start
-    for i in range(args.steps):
+    for i in range(6):
         print("Sending metric {}".format(value))
         metrics.send_metric("value", value)
         value += args.stepsize
